@@ -7,7 +7,7 @@
 body{
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 98vh;
   user-select: none;
 }
 
@@ -35,11 +35,17 @@ textarea{
   border: none;
   resize: none;
   border-bottom: 1px solid #C0C0C0E8;
+  overflow: hidden;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
 }
 
 textarea::-webkit-input-placeholder{
   color: inherit;
 }
+
 .row{
   display: flex;
   align-items: center;
