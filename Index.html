@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Calculator</title>
+      <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" />
+      <script src="Main.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="script.js" type="text/javascript" charset="utf-8" defer></script>
+  </head>
+  <body>
+      <div class="Calculator">
+        <textarea type="text" value="" placeholder="0" readonly />
+        <div class="row r1">
+          <div class="allClear" onclick="allClear()">AC</div>
+          <div id="delete" class="material-icons-outlined" onclick="Delete()">backspace</div>
+          <div class="operator" >%</div>
+          <div class="operator">/</div>
+        </div>
+        <div class="row">
+          <div class="number">7</div>
+          <div class="number">8</div>
+          <div class="number">9</div>
+          <div class="operator">*</div>
+        </div>
+        <div class="row">
+          <div class="number">4</div>
+          <div class="number">5</div>
+          <div class="number">6</div>
+          <div class="operator">-</div>
+        </div>
+        <div class="row">
+          <div class="number">1</div>
+          <div class="number">2</div>
+          <div class="number">3</div>
+          <div class="operator">+</div>
+        </div>
+        <div class="row">
+          <div class="empty" onclick=""></div>
+          <div class="number">0</div>
+          <div class="decimal">.</div>
+          <div class="calculate" onclick="calculate()">=</div>
+        </div>
+      </div>
+  </body>
+</html>
